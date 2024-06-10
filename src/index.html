@@ -4,7 +4,62 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BurgerMenu</title>
+    <title>Diploma</title>
   </head>
-  <body></body>
+  <body>
+    <main class="main">
+      <div class="form-block">
+        <h1 class="title">Расчёт круговых и переходных кривых</h1>
+        <form class="form" action="">
+          <div class="form__line">
+            <label class="form__label" for="radius">Радиус по проекту:</label>
+            <input
+            class="form__input"
+            value="230"
+              id="radius"
+              type="number"
+            />
+          </div>
+          <div class="form__line">
+            <label class="form__label" for="lengsK">Длина кривой: </label>
+            <input
+            class="form__input"
+            value="700"
+              id="lengsK"
+              type="number"
+            />
+          </div>
+          <div class="form__line">
+            <label class="form__label" for="lengsL1">Длина переходной кривой: L1 </label>
+            <input
+            class="form__input"
+            value="150"
+              id="lengsL1"
+              type="number"
+            />
+          </div>
+          <div class="form__line">
+            <label class="form__label" for="lengsL2">Длина переходной кривой: L2 </label>
+            <input
+            class="form__input"
+            value="150"
+              id="lengsL2"
+              type="number"
+            />
+          </div>
+          <div class="form__line form__line--textarea">
+            <label class="form__label" for="naturalPoints">Введите натурные точки:</br> Ввод натурных точек с запятыми и без пробелов</label>
+            <textarea placeholder="Введите натурные точки" name="number" id="naturalPoints" class="form__input form__input--textarea">0,14,29,43,58,72,87,101,116,130,145,159,174,188,203,217,217,217,217,217,217,217,217,217,217,217,217,217,217,217,217,217,217,217,217,217,217,217,217,217,217,217,217,217,217,217,217,217,217,217,217,217,217,217,217,217,203,188,174,159,145,130,116,101,87,72,58,43,29,14,0</textarea>
+          </div>
+          <button class="form__btn" id="calc" type="submit">Расчитать</button>
+        </div>
+        </form></div>
+      
+      <div>
+        <canvas class="canvas" id="myChart"></canvas>
+      </div>
+      <div id="table" class="table"></div>
+      <div id="sum" class="sum"></div>
+    </main>
+  </body>
 </html>
